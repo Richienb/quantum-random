@@ -1,6 +1,6 @@
 {
 	"name": "quantum-random",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Generate a truly random hexadecimal string.",
 	"repository": "https://github.com/Richienb/quantum-random.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
