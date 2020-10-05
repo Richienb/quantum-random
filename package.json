@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "quantum-random",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Generate a truly random hexadecimal string.",
+	"repository": "https://github.com/Richienb/quantum-random.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -11,17 +11,32 @@
 		"index.d.ts"
 	],
 	"engines": {
-		"node": ">=10"
+		"node": ">=10.17"
 	},
 	"scripts": {
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"quantum",
+		"random",
+		"generate",
+		"string",
+		"seed",
+		"hex",
+		"hexadecimal",
+		"math",
+		"prng",
+		"qrng"
+	],
+	"dependencies": {
+		"ky": "^0.24.0",
+		"ky-universal": "^0.8.2",
+		"round-intervals": "^1.1.0"
+	},
 	"devDependencies": {
-		"ava": "^3.12.1",
-		"eslint-config-richienb": "^0.4.2",
+		"ava": "^3.13.0",
+		"eslint-config-richienb": "^0.5.0",
 		"xo": "^0.33.1"
 	},
 	"xo": {

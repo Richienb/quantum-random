@@ -1,15 +1,25 @@
+declare namespace quantumRandom {
+	export interface Options {
+		/**
+		The amount of hexadecimal characters to generate. If used to seed a [pseudorandom number generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator), it should ideally [be equal to](https://stackoverflow.com/a/50411024/8384910) the [state length](https://en.wikipedia.org/wiki/State-space_representation) of the algorithm used.
+
+		@default 0
+		*/
+		size?: number
+	}
+}
+
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Get a randomly generated hexadecimal string.
+
 @example
 ```
-const theModule = require("the-module")
+const quantumRandom = require("quantum-random")
+const Chance = require("chance")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+const chance = new Chance(await quantumRandom({ size: 19937 }))
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function quantumRandom(options?: quantumRandom.Options): Promise<string>
 
-export = theModule
+export = quantumRandom
